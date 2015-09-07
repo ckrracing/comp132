@@ -27,7 +27,7 @@ Definition: is a complete binary tree , that stores it's elements (nodes) with a
 #####Tree Height
  **O(LogN)**
  
- #####Runtime
+#####Runtime
  * To add each node: **O(Log N)**
  * To add N nodes: **(N Log N)**
  
@@ -41,10 +41,10 @@ Definition: is a complete binary tree , that stores it's elements (nodes) with a
  #####HeapSort Algorithm 
  
  ADD all items to the heap (heapify)
-    REPEAT until the heap is empty:
-      REMOVE the root from the heap
-      PUSH the last value in the heap to root
-      PUSH the value down to fix the heap
+    REPEAT until the heap is empty:  
+      REMOVE the root from the heap  
+      PUSH the last value in the heap to root  
+      PUSH the value down to fix the heap  
       
 **Note** that is different to when we add item to the heap where we PUSHUP() the node.
 
