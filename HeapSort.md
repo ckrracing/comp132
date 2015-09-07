@@ -55,3 +55,23 @@ Definition: is a complete binary tree , that stores it's elements (nodes) with a
 
 * Total Time: **O(N Log N) + O(N Log N) = O(N Log N)**
 
+#####Complete Binary Tree
+
+* Each node has at most 2 children
+* Leaf nodes are on the bottom and pushed to the left
+
+How to find children of Parent Node (P) of **ZERO** based array  
+
+ChildLH = (P) * 2 + 1 
+ChildRH = (P) * 2 + 2 
+
+** One ** based array 
+ChildLH  = (P) * 2 ;
+ChildRH  = (P) * 2 + 1;
+
+IF ChildRH index > end of the array then it doesn't exist 
+
+Find Parent of ChildX
+
+floor( (indexOfChildX - 1) / 2 )
+
