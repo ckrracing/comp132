@@ -1,6 +1,6 @@
 # comp132
 
-####Heap Sort
+#####Heap Sort
 
 **Heap Sort** 
 Definition: is a complete binary tree , that stores it's elements (nodes) with a heap property.
@@ -9,7 +9,7 @@ Definition: is a complete binary tree , that stores it's elements (nodes) with a
   The order in which nodes are kept in the binary heap tree, where the Parent Node (P)  
   is greater than either of it's child nodes. 
   
-  ####Building a Heap Algorithm
+  #####Building a Heap Algorithm
   
   ForEach Value **(v):
     ADD (v) to END of HEAP 
@@ -19,9 +19,9 @@ Definition: is a complete binary tree , that stores it's elements (nodes) with a
            ELSE SWAP( (P) , (V) ) 
     END.
 
-####Number of Nodes in Tree
+#####Number of Nodes in Tree
  **Log(base2)(N +1)**
 
-####Tree Height
+#####Tree Height
  **O(LogN)
  
