@@ -1,0 +1,65 @@
+##PriorityQueues
+
+java.util.Comparator; //JCF Implmentation
+
+####Defining a Comparator
+
+public interface Comparator()<T> {
+  
+  public int compareTo(T t1, T t2);
+  
+  }
+
+####Implementing Comparable Interface
+
+java.lang.Comparable; // JCF Implementation
+
+interface Comparable()<T>  {
+  int compareTo(T t);
+  }
+  
+Public Class SomeClass implements Comparable<SomeClass> {
+
+  public int compareTo(SomeClass someClass) {
+	//see if it is < = > then return -1 0 1 
+  }
+  
+  //local methods here 
+}
+
+####PriorityQueue extends AbstractQueue , Implements Queue
+
+#####Six Declarations
+
+**Declaration** if the objects implement Comparable or are comparable
+
+PriorityQueue<T> priorityQueue = new PriorityQueue<T>(); //Generic
+
+**Declaration** if the objects require a separate Comparator Object
+
+PriorityQueue<T> priorityQueue = new PriorityQueue<T>(int capacity , Comparator<? super E> comparator);
+
+PriorityQueue<T> priorityQueue = new PriorityQueue<T>(int capacity);
+
+PriorityQueue<T> priorityQueue = new PriorityQueue<T>(Collection<? extends E> collection)
+
+PriorityQueue<T> priorityQueue = new PriorityQueue<T>(SortedSet<? extends E?> sortedSet)
+
+PriorityQueue<T> priorityQueue = new PriorityQueue<T>(PriorityQueue <? extends E> priorityQueue);
+
+#####Obtaining the Comparator  
+Use comparator() //returns Comparator<? super E> else null if natural ordering is used. 
+
+
+
+Heapsort add / remove operations are O(log n) time. 
+cf unsorted link list
+* add operations are in constant time 
+* remove O(n) // poorly performing 
+
+cf sorted link list 
+* add O(n) //bad
+* remove constant 
+
+
+
